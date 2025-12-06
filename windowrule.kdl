@@ -1,0 +1,26 @@
+// Window Rules
+window-rule {
+    match app-id="floating"
+    open-floating true
+}
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+// window-rule {
+//     match hotkey-overlay-title="Floating"
+//
+//     open-floating true
+// }
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+window-rule {
+    match app-id=r#"com.github.hluk.copyq"#
+    open-floating true
+}
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}

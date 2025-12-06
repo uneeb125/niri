@@ -1,0 +1,6 @@
+// Input Devices & Gestures
+gestures {
+    hot-corners {
+        // off
+    }
+}

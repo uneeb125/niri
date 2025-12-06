@@ -1,0 +1,13 @@
+environment {
+    BROWSER "/usr/bin/firefox"
+    HSA_OVERRIDE_GFX_VERSION "11.0.0"
+    PYTORCH_ROCM_ARCH "gfx1100"
+    QT_QPA_PLATFORMTHEME "qt5ct"
+    XDG_CURRENT_DESKTOP "niri"
+    DISPLAY ":1"
+    XDG_SESSION_TYPE "wayland"
+    QT_QPA_PLATFORM "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    QT_WAYLAND_DISABLE_WINDOWDECORATIONS "1"
+    TESTI "1"
+}
