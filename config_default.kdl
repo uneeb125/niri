@@ -1,0 +1,28 @@
+
+include "output_uneebzen.kdl"
+
+include "input.kdl"
+
+include "gestures.kdl"
+
+include "layout.kdl"
+
+include "windowrule.kdl"
+
+include "animations.kdl"
+
+include "binds.kdl"
+
+include "environment.kdl"
+
+include "overview.kdl"
+
+prefer-no-csd
+
+spawn-at-startup "xwayland-satellite"
+
+
+
+
+
+
