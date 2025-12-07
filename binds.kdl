@@ -40,6 +40,9 @@ binds {
     XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--min-value=170" "--exponent=3.5" "s" "+5%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--min-value=170" "--exponent=3.5" "s" "5%-"; }
+    Mod+Shift+SemiColon repeat=false  { spawn-sh "rfkill block all"; }
+    Mod+Shift+Apostrophe repeat=false  { spawn-sh "rfkill unblock all"; }
+    Mod+Shift+BackSlash repeat=false  { spawn-sh "systemctl suspend"; }
 
     // Window & Column Management
     Mod+C { close-window; }
