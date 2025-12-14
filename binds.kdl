@@ -100,6 +100,10 @@ binds {
     Mod+Shift+K { set-window-height "-5%"; }
     Mod+Shift+J { set-window-height "+5%"; }
 
+    // Overview zoom change
+    CTRL+WheelScrollUp { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
+    CTRL+WheelScrollDown { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
+
     // Workspace & Monitor Control
     Mod+Tab repeat=false { toggle-overview; }
     Mod+W { focus-workspace-up; }
