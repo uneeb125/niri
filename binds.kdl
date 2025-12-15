@@ -103,6 +103,8 @@ binds {
     // Overview zoom change
     CTRL+WheelScrollUp { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
     CTRL+WheelScrollDown { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
+    Mod+Alt+Equal { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
+    Mod+Alt+Minus { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
 
     // Workspace & Monitor Control
     Mod+Tab repeat=false { toggle-overview; }
