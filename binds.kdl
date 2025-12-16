@@ -65,8 +65,8 @@ binds {
     Mod+End { focus-column-last; }
     Mod+WheelScrollRight { focus-column-right; }
     Mod+WheelScrollLeft { focus-column-left; }
-    Mod+Shift+WheelScrollDown { focus-column-right; }
-    Mod+Shift+WheelScrollUp { focus-column-left; }
+    // Mod+Shift+WheelScrollDown { focus-column-right; }
+    // Mod+Shift+WheelScrollUp { focus-column-left; }
 
     // Move Windows & Columns
     Mod+Left { move-column-left; }
@@ -101,8 +101,8 @@ binds {
     Mod+Shift+J { set-window-height "+5%"; }
 
     // Overview zoom change
-    CTRL+WheelScrollUp { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
-    CTRL+WheelScrollDown { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
+    Mod+Shift+WheelScrollUp { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
+    Mod+Shift+WheelScrollDown { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
     Mod+Alt+Equal { spawn "/home/uneeb/.config/niri/scripts/inc_overview.sh"; }
     Mod+Alt+Minus { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
 
