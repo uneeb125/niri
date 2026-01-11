@@ -133,6 +133,10 @@ binds {
     Mod+Ctrl+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
 
+    // Output switching
+    Mod+Shift+Right { focus-monitor-right; }
+    Mod+Shift+Left { focus-monitor-left; }
+
     // Focus/Move to Workspace by Index
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
