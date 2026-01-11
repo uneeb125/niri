@@ -12,7 +12,9 @@ input {
         dwt
         natural-scroll
         middle-emulation
-        scroll-factor 0.4
+        scroll-factor 0.5
+        accel-speed 0.3
+        // accel-profile "flat"
     }
 
     mouse {
