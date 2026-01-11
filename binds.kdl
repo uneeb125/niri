@@ -44,6 +44,10 @@ binds {
     Mod+Shift+Apostrophe repeat=false  { spawn-sh "rfkill unblock all"; }
     Mod+Shift+BackSlash repeat=false  { spawn-sh "systemctl suspend"; }
 
+
+    // ndict type
+    XF86Launch5 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
+
     // Window & Column Management
     Mod+C { close-window; }
     Mod+Shift+M repeat=false { maximize-column; }
