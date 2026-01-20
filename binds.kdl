@@ -14,7 +14,7 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+Backspace { spawn "systemctl" "sleep";}
     Alt+C { spawn "copyq" "toggle"; }
-    Mod+Q repeat=false { spawn "firefox";}
+    Mod+Q repeat=false { spawn "glide-bin";}
     // Mod+Q repeat=false { spawn "brave" "--force-device-scale-factor=0.9" "--password-store=basic"; }
     Mod+E repeat=false { spawn-sh "foot tmux new-session yazi"; }
     Mod+Shift+E { spawn "/home/uneeb/.config/foot/scripts/ranger_at_pwd.sh"; }
@@ -42,11 +42,12 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--min-value=170" "--exponent=3.5" "s" "5%-"; }
     Mod+Shift+SemiColon repeat=false  { spawn-sh "rfkill block all"; }
     Mod+Shift+Apostrophe repeat=false  { spawn-sh "rfkill unblock all"; }
-    Mod+Shift+BackSlash repeat=false  { spawn-sh "systemctl suspend"; }
+    // Mod+Shift+BackSlash repeat=false  { spawn-sh "systemctl suspend"; }
 
 
     // ndict type
     XF86Launch5 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
+    Mod+Shift+BackSlash { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
 
     // Window & Column Management
     Mod+C { close-window; }
