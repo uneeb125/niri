@@ -117,8 +117,8 @@ binds {
 
     // Workspace & Monitor Control
     Mod+Tab repeat=false { toggle-overview; }
-    Mod+W { focus-workspace-up; }
-    Mod+S { focus-workspace-down; }
+    Mod+W { focus-window-or-workspace-up; }
+    Mod+S { focus-window-or-workspace-down; }
     Mod+Page_Up { focus-workspace-up; }
     Mod+Page_Down { focus-workspace-down; }
     Mod+Shift+W { move-column-to-workspace-up; }
