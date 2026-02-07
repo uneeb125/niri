@@ -8,7 +8,7 @@ binds {
     Alt+Period repeat=false { spawn "foot"; }
     Mod+Return repeat=false {spawn "alacritty";}
     Mod+Shift+Return repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "footclient" "-a" "foot"; }
-    Alt+Space repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "footclient" "-a" "foot" "tmux"; }
+    Alt+Space repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty" "--single-instance" "tmux"; }
     Alt+Shift+Space { spawn "/home/uneeb/.config/foot/scripts/foot_same_cwd.sh"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }

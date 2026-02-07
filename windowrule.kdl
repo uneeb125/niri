@@ -30,3 +30,7 @@ window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
 }
+window-rule {
+    match app-id="HeadlessKitty"
+    open-floating true
+}
