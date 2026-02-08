@@ -5,22 +5,19 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     // Spawning Applications
-    Alt+Period repeat=false { spawn "foot"; }
+    Alt+Period repeat=false { spawn "kitty"; }
     Mod+Return repeat=false {spawn "alacritty";}
-    Mod+Shift+Return repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "footclient" "-a" "foot"; }
+    Mod+Shift+Return repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn-sh "alacritty"; }
     Alt+Space repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty" "--single-instance" "tmux"; }
-    Alt+Shift+Space { spawn "/home/uneeb/.config/foot/scripts/foot_same_cwd.sh"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+Backspace { spawn "systemctl" "sleep";}
     Alt+C { spawn "copyq" "toggle"; }
-    Alt+V repeat=false { spawn "foot" "--app-id" "clipse" "clipse"; }
+    Alt+V repeat=false { spawn-sh "kitty --class clipse clipse"; }
     Mod+Q repeat=false { spawn "glide-bin";}
     // Mod+Q repeat=false { spawn "brave" "--force-device-scale-factor=0.9" "--password-store=basic"; }
-    Mod+E repeat=false { spawn-sh "foot tmux new-session yazi"; }
-    Mod+Shift+E { spawn "/home/uneeb/.config/foot/scripts/ranger_at_pwd.sh"; }
-    Mod+N { spawn "footclient" "-a" "foot" "btop"; }
-    Mod+Shift+B  { spawn-sh "footclient -a foot cd /home/uneeb/repos/dictate &"; }
+    Mod+E repeat=false { spawn-sh "kitty --single-instance tmux new-session yazi"; }
+    Mod+N { spawn-sh "kitty --single-instance btop"; }
 
     // Screenshots
     Mod+Shift+1 { spawn "/home/uneeb/.config/niri/scripts/screenshot_to_tesseract.sh"; }
