@@ -6,5 +6,5 @@ output "eDP-1" {
     // position x=1280 y=0
     variable-refresh-rate // on-demand=true
     focus-at-startup
-    backdrop-color "#192939"
+    backdrop-color "#000000"
 }
