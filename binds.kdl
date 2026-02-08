@@ -12,8 +12,8 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+Backspace { spawn "systemctl" "sleep";}
-    Alt+C { spawn "copyq" "toggle"; }
-    Alt+V repeat=false { spawn-sh "kitty --class clipse clipse"; }
+    Alt+V repeat=false { spawn "copyq" "toggle"; }
+    Alt+C repeat=false { spawn-sh "kitty --class clipse clipse"; }
     Mod+Q repeat=false { spawn "glide-bin";}
     // Mod+Q repeat=false { spawn "brave" "--force-device-scale-factor=0.9" "--password-store=basic"; }
     Mod+E repeat=false { spawn-sh "kitty --single-instance tmux new-session yazi"; }
