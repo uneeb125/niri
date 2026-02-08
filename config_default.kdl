@@ -17,10 +17,43 @@ include "environment.kdl"
 
 include "overview.kdl"
 
-include "recent-windows"
-
 prefer-no-csd
 
 spawn-at-startup "xwayland-satellite"
+spawn-at-startup "kitty" "--class" "HeadlessKitty" "--single-instance" "--start-as" "hidden" "--listen-on" "unix:/tmp/kitty-socket" "-o" "allow_remote_control=yes" "tail" "-f" "/dev/null"
 
-spawn-at-startup "clipse" "-listen"
+
+
+
+layout {
+    gaps 0
+    center-focused-column "never"
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+    focus-ring {
+        width 0
+        active-color "#5fa8cf"
+        inactive-color "#505050"
+    }
+    border {
+        // off
+        width 1
+        active-color "#ffc87f"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+    }
+    shadow {
+        off
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+    struts {}
+}
+
+
