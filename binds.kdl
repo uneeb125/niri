@@ -63,10 +63,10 @@ binds {
     // Focus Control
     Mod+A { focus-column-left; }
     Mod+D { focus-column-right; }
-    Mod+J { move-floating-window; }
-    Mod+K { move-floating-window; }
-    Mod+H { move-floating-window; }
-    Mod+L { move-floating-window; }
+    Mod+J { spawn "niri" "msg" "action" "move-floating-window" "-y" "+20"; }
+    Mod+K { spawn "niri" "msg" "action" "move-floating-window" "-y" "-20"; }
+    Mod+H { spawn "niri" "msg" "action" "move-floating-window" "-x" "-20"; }
+    Mod+L { spawn "niri" "msg" "action" "move-floating-window" "-x" "+20"; }
     Mod+Home { focus-column-first; }
     Mod+End { focus-column-last; }
     Mod+WheelScrollRight { focus-column-right; }
