@@ -57,13 +57,16 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
     Mod+Shift+Space { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+SemiColon { switch-focus-between-floating-and-tiling; }
     Mod+Shift+P { toggle-column-tabbed-display; }
 
     // Focus Control
     Mod+A { focus-column-left; }
     Mod+D { focus-column-right; }
-    Mod+J { focus-window-down; }
-    Mod+K { focus-window-up; }
+    Mod+J { move-floating-window; }
+    Mod+K { move-floating-window; }
+    Mod+H { move-floating-window; }
+    Mod+L { move-floating-window; }
     Mod+Home { focus-column-first; }
     Mod+End { focus-column-last; }
     Mod+WheelScrollRight { focus-column-right; }
