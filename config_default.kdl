@@ -23,7 +23,7 @@ prefer-no-csd
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "kitty" "--class" "HeadlessKitty" "--single-instance" "--start-as" "hidden" "--listen-on" "unix:/tmp/kitty-socket" "-o" "allow_remote_control=yes" "tail" "-f" "/dev/null"
 spawn-at-startup "clipse" "-listen"
-
+spawn-at-startup "niri-float-sticky"
 
 
 layout {
