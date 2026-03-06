@@ -2,7 +2,7 @@ input {
     disable-power-key-handling
     workspace-auto-back-and-forth
     keyboard {
-        repeat-delay 200
+        repeat-delay 300
         repeat-rate 60
         xkb {}
         numlock
