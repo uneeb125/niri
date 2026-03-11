@@ -42,9 +42,9 @@ binds {
     Mod+Shift+SemiColon repeat=false  { spawn-sh "rfkill block all"; }
     Mod+Shift+Apostrophe repeat=false  { spawn-sh "rfkill unblock all"; }
     // Mod+Shift+BackSlash repeat=false  { spawn-sh "systemctl suspend"; }
-    Mod+Shift+P    repeat=false  { spawn "niri-float-sticky" "-ipc" "toggle-sticky";  }
-    Mod+Shift+O    repeat=false  { spawn "niri-float-sticky" "-ipc" "set-sticky";  }
-    Mod+Shift+I    repeat=false  { spawn "niri-float-sticky" "-ipc" "unset-sticky";  }
+    Mod+Shift+P    repeat=false  { spawn "/home/uneeb/.config/niri/scripts/niri_toggle_sticky.sh";  }
+    Mod+Shift+O    repeat=false  { spawn "/home/uneeb/.config/niri/scripts/niri_set_sticky.sh";  }
+    Mod+Shift+I    repeat=false  { spawn "/home/uneeb/.config/niri/scripts/niri_unset_sticky.sh";  }
 
 
     // ndict type
