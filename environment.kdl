@@ -1,5 +1,4 @@
 environment {
-    BROWSER "/usr/bin/firefox"
     HSA_OVERRIDE_GFX_VERSION "11.0.0"
     PYTORCH_ROCM_ARCH "gfx1100"
     QT_QPA_PLATFORMTHEME "qt5ct"
