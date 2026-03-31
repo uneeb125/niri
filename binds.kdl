@@ -49,6 +49,9 @@ binds {
     // ndict type
     XF86Launch5 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
     Mod+Shift+BackSlash { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
+    F22 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
+    F24 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar start"; }
+    F23 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar stop"; }
 
     // Window & Column Management
     Mod+C { close-window; }
