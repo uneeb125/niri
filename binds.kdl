@@ -14,7 +14,9 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Alt+V repeat=false { spawn "copyq" "toggle"; }
     Alt+C repeat=false { spawn-sh "kitty --class clipse clipse"; }
-    Mod+T repeat=false { spawn-sh "kitty --class fzpicker sh -c \"/home/uneeb/.config/niri/scripts/niri_window_fzf.sh\""; }
+    Mod+T repeat=false { spawn-sh "/home/uneeb/.config/niri/scripts/niri_window_fzf.sh"; }
+    Mod+Shift+T repeat=false { spawn "anyrun" "--plugins" "libniri_focus.so" "--show-results-immediately" "true"; }
+    Alt+Shift+Space repeat=false { spawn "anyrun"; }
     Mod+Q repeat=false { spawn "glide-bin";}
     Mod+W repeat=false { spawn "glide-bin";}
     // Mod+Q repeat=false { spawn "brave" "--force-device-scale-factor=0.9" "--password-store=basic"; }
