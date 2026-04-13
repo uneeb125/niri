@@ -13,7 +13,7 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Alt+V repeat=false { spawn "copyq" "toggle"; }
-    Alt+C repeat=false { spawn-sh "kitty --class clipse clipse"; }
+    Alt+C repeat=false { spawn-sh "/home/uneeb/.cargo/bin/ringboard-egui"; }
     Mod+T repeat=false { spawn-sh "/home/uneeb/.config/niri/scripts/niri_window_fzf.sh"; }
     Mod+Shift+T repeat=false { spawn "anyrun" "--plugins" "libniri_focus.so" "--show-results-immediately" "true"; }
     Alt+Shift+Space repeat=false { spawn "anyrun"; }
