@@ -8,5 +8,9 @@ environment {
     QT_QPA_PLATFORM "wayland"
     MOZ_ENABLE_WAYLAND "1"
     QT_WAYLAND_DISABLE_WINDOWDECORATIONS "1"
-    TESTI "1"
+    GTK_IM_MODULE "ibus"
+    QT_IM_MODULE "ibus"
+    XMODIFIERS "@im=ibus"
+    // Ensure Glide/Firefox runs natively on Wayland
+    MOZ_ENABLE_WAYLAND "1"
 }

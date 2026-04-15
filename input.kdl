@@ -1,12 +1,14 @@
 input {
     disable-power-key-handling
     workspace-auto-back-and-forth
+
     keyboard {
-        repeat-delay 300
+        repeat-delay 260
         repeat-rate 60
         xkb {}
         numlock
     }
+
     touchpad {
         tap
         dwt
