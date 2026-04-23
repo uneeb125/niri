@@ -1,5 +1,5 @@
 overview {
-    off
-zoom 0.2
-    backdrop-color "#000000"
+    hot-corners {
+        off
+    }
 }
