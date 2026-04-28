@@ -4,6 +4,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+Backspace { spawn "systemctl" "sleep";}
+    Mod+Shift+Ctrl+Backspace { spawn "systemctl" "sleep";}
 
     // Spawning Applications
     Alt+Period repeat=false { spawn "kitty"; }
