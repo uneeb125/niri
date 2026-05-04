@@ -3,7 +3,7 @@ input {
     workspace-auto-back-and-forth
 
     keyboard {
-        repeat-delay 260
+        repeat-delay 270
         repeat-rate 60
         xkb {}
         numlock
