@@ -25,7 +25,7 @@ kitty --class fzpicker sh -c "
     \"\\(.id)\\t\\(.app_id)\\t\\(.title)\\tws\\(.workspace_id)\\(if .is_floating then \" float\" else \"\" end)\"
   ' | fzf \
     --delimiter '\\t' \
-    --with-nth 3.. \
+    --with-nth 2.. \
     --no-multi \
     --preview '
       id={1}
