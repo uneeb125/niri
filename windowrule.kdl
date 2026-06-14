@@ -67,6 +67,34 @@ window-rule {
     open-fullscreen false
 }
 
+window-rule {
+  match app-id=r"org.kde.kdeconnect.daemon" // ID of presentation pointer overlay
+  open-floating true
+  open-fullscreen false
+  default-floating-position x=0 y=0 relative-to="top-left"
+
+  // Adjust these to your monitor's resolution
+  min-width 1920
+  min-height 1080
+
+  // Optionally customize opacity of pointer
+  // opacity 1.0
+
+  tiled-state true
+
+  focus-ring {
+    off
+  }
+  border {
+    off
+  }
+  shadow {
+    off
+  }
+  draw-border-with-background false
+}
+
+
 // window-rule {
 //     match app-id="HeadlessKitty"
 //     open-floating true
