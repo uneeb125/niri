@@ -2,6 +2,7 @@ environment {
     HSA_OVERRIDE_GFX_VERSION "11.0.0"
     PYTORCH_ROCM_ARCH "gfx1100"
     QT_QPA_PLATFORMTHEME "xdgdesktopportal"
+    QT_QPA_PLATFORMTHEME "gtk3"
     XDG_CURRENT_DESKTOP "niri"
     DISPLAY ":1"
     XDG_SESSION_TYPE "wayland"

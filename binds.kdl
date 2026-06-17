@@ -124,7 +124,7 @@ binds {
 
     // Noctalia Toggle
     Mod+Shift+Slash { spawn-sh "pkill qs"; }
-    Mod+Shift+Period { spawn-sh "QT_QPA_PLATFORM=wayland qs -c noctalia-shell"; }
+    Mod+Shift+Period { spawn-sh "QT_QPA_PLATFORMTHEME=gtk3 QT_QPA_PLATFORM=wayland qs -c noctalia-shell"; }
 
     // Workspace & Monitor Control
     Mod+Tab repeat=false { toggle-overview; }
