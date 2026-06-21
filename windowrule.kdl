@@ -13,8 +13,18 @@ window-rule {
 //     open-floating true
 // }
 window-rule {
-    match title="^Picture-in-Picture$"
+    match app-id="firefox$" title="^Picture-in-Picture$"
     open-floating true
+    default-column-width { proportion 0.25; }
+    default-window-height { proportion 0.25; }
+    default-floating-position x=0 y=0 relative-to="top-right"
+}
+window-rule {
+    match app-id="chromium" title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { proportion 0.25; }
+    default-window-height { proportion 0.25; }
+    default-floating-position x=0 y=0 relative-to="top-right"
 }
 
 window-rule {
@@ -65,6 +75,13 @@ window-rule {
     default-column-width { proportion 0.5; }
     default-window-height { proportion 1.0; }
     open-fullscreen false
+}
+window-rule {
+    match app-id="glide-glide" title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { proportion 0.25; }
+    default-window-height { proportion 0.25; }
+    default-floating-position x=0 y=0 relative-to="top-right"
 }
 
 window-rule {
