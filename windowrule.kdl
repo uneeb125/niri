@@ -85,6 +85,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id="mpv"
+    match is-floating=true
+    default-floating-position x=0 y=0 relative-to="top-right"
+}
+
+window-rule {
   match app-id=r"org.kde.kdeconnect.daemon" // ID of presentation pointer overlay
   open-floating true
   open-fullscreen false

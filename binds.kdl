@@ -66,6 +66,7 @@ binds {
     Mod+Ctrl+F { expand-column-to-available-width; }
     Mod+Ctrl+C { center-visible-columns; }
     Mod+Shift+Space { toggle-window-floating; }
+    Mod+Shift+Ctrl+Space { spawn "/home/uneeb/.config/niri/scripts/niri_pip_style.sh"; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+SemiColon { switch-focus-between-floating-and-tiling; }
     // Mod+Shift+P { toggle-column-tabbed-display; }
