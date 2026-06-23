@@ -2,23 +2,32 @@ layout {
     gaps 3
     background-color "#080808" 
     center-focused-column "never"
+     empty-workspace-above-first
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
     default-column-width { proportion 0.5; }
+    insert-hint {
+        // off
+        gradient from="#ffbb6680" to="#ffc88080" angle=45 relative-to="workspace-view"
+    }
     focus-ring {
         // off
         width 3
-        active-color "#5fa8cf"
-        inactive-color "#505050"
+        active-gradient from="#80c8ff" to="#bbddff" angle=45
     }
     border {
         off
         width 30
-        active-color "#ffc87f"
-        inactive-color "#505050"
+        active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
+        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
         urgent-color "#9b0000"
     }
     shadow {

@@ -108,6 +108,7 @@ binds {
     // Sizing Control
     Mod+R { switch-preset-column-width; }
     Mod+Ctrl+R { reset-window-height; }
+    Mod+Shift+R { switch-preset-window-height; }
     Mod+Minus { set-column-width "-5%"; }
     Mod+Equal { set-column-width "+5%"; }
     Mod+Shift+Minus { set-window-height "-5%"; }

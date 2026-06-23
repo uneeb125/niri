@@ -73,8 +73,9 @@ window-rule {
 window-rule {
     match app-id="glide-glide"
     default-column-width { proportion 0.5; }
-    default-window-height { proportion 1.0; }
     open-fullscreen false
+    open-maximized false
+    open-maximized-to-edges false
 }
 window-rule {
     match app-id="glide-glide" title="^Picture-in-Picture$"
