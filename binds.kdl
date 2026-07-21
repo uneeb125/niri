@@ -61,6 +61,7 @@ binds {
     Mod+C { close-window; }
     Mod+Shift+M repeat=false { fullscreen-window; }
     Mod+M repeat=false { maximize-window-to-edges; }
+    Mod+V repeat=false { maximize-window-to-edges; }
     // Mod+F repeat=false { maximize-column; }
     Mod+Shift+N { fullscreen-window; }
     Mod+Ctrl+F { expand-column-to-available-width; }

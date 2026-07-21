@@ -3,3 +3,4 @@ spawn-at-startup "kitty" "--class" "HeadlessKitty" "--single-instance" "--start-
 spawn-at-startup "clipse" "-listen"
 spawn-at-startup "niri-float-sticky" "-disable-auto-stick"
 spawn-at-startup "sh" "-c" "QT_QPA_PLATFORMTHEME=gtk3 QT_QPA_PLATFORM=wayland qs -c noctalia-shell"
+spawn-at-startup "sh" "-c" "sleep 3 && xset +fp /usr/share/fonts/TTF && xset +fp /usr/share/fonts/OTF && xset fp rehash && xrdb -merge ~/.Xresources"
