@@ -1,0 +1,14 @@
+// Output Configuration
+output "HDMI-A-1" {
+    mode "2560x1440@144.002"
+    scale 1
+    position x=3422 y=-563
+    transform "270"
+}
+
+
+output "DP-1" {
+    mode "3440x1440@164.999"
+    scale 1
+    position x=0 y=0
+}

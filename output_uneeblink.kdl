@@ -1,7 +1,26 @@
 // Output Configuration
 output "HDMI-A-1" {
-    mode "2560x1440@99.965"
+    mode "2560x1440@144.002"
     scale 1
-    transform "normal"
-    // variable-refresh-rate
+    position x=3444 y=-603
+    transform "270"
+    layout {
+        default-column-width { proportion 1.0; }
+        always-center-single-column
+        preset-column-widths {
+            proportion 0.33333
+            proportion 0.66667
+        }
+    }
+}
+
+
+output "DP-1" {
+    mode "3440x1440@164.999"
+    scale 1
+    position x=0 y=0
+    layout {
+        default-column-width { proportion 0.333333333; }
+        always-center-single-column
+    }
 }
