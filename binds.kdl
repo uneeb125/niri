@@ -11,7 +11,8 @@ binds {
     Mod+Return repeat=false {spawn "alacritty";}
     Mod+Shift+Return repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn-sh "alacritty"; }
     Alt+Space repeat=false hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty" "--single-instance" "tmux"; }
-    Mod+Space hotkey-overlay-title="Run an Application: noctalia-launcher" { spawn "sh" "-c" "QT_QPA_PLATFORM=wayland qs ipc -c noctalia-shell call launcher toggle"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: noctalia-launcher" { spawn "sh" "-c" "QT_QPA_PLATFORM=wayland qs ipc -c noctalia-shell call launcher toggle"; }
+    Mod+Space repeat=false {spawn-sh "noctalia msg panel-toggle launcher"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Alt+V repeat=false { spawn "copyq" "toggle"; }
     Alt+C repeat=false { spawn-sh "kitty --class \"ringboard-tui\" /home/uneeb/.cargo/bin/ringboard-tui"; }
@@ -132,8 +133,8 @@ binds {
     Mod+Alt+Minus { spawn "/home/uneeb/.config/niri/scripts/dec_overview.sh"; }
 
     // Noctalia Toggle
-    Mod+Shift+Slash { spawn-sh "pkill qs"; }
-    Mod+Shift+Period { spawn-sh "QT_QPA_PLATFORMTHEME=gtk3 QT_QPA_PLATFORM=wayland qs -c noctalia-shell"; }
+    Mod+Shift+Slash { spawn-sh "pkill noctalia"; }
+    Mod+Shift+Period { spawn-sh "noctalia"; }
 
     // Workspace & Monitor Control
     Mod+Tab repeat=false { toggle-overview; }
