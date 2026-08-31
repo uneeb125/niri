@@ -1,5 +1,15 @@
 // Window Rules
 window-rule {
+    match title="Kando Menu"
+    open-floating true
+    focus-ring { off; }
+    border { off; }
+    shadow { off; }
+    default-floating-position x=0 y=0
+}
+
+
+window-rule {
     match app-id="floating"
     open-floating true
 }

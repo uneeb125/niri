@@ -2,7 +2,7 @@
 output "HDMI-A-1" {
     mode "2560x1440@144.002"
     scale 1
-    position x=3444 y=-603
+    position x=3444 y=-490
     transform "270"
     layout {
         default-column-width { proportion 1.0; }
