@@ -1,1 +1,1 @@
-spawn-at-startup "opencode" "web" "--hostname" "0.0.0.0"
+// spawn-at-startup "opencode2" "service" "start"
