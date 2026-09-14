@@ -55,8 +55,16 @@ binds {
     XF86Launch5 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
     Mod+Shift+BackSlash { spawn-sh "/home/uneeb/.local/bin/ndict-waybar toggle"; }
     F19 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar stop"; }
-    F24 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar start"; }
-    F23 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar complete"; }
+    F23 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar start"; }
+    F22 { spawn-sh "/home/uneeb/.local/bin/ndict-waybar complete"; }
+    // Swallow kanata's F24 no-op key (tap-hold repeat workaround) at the
+    // compositor so it never reaches any app, terminal or GUI. niri has no
+    // true no-op action (see niri discussion #3837), so this uses
+    // power-on-monitors, whose handler early-returns while monitors are
+    // already active (the normal case) and is otherwise redundant because
+    // any keypress already wakes the monitors. repeat=false so autorepeat
+    // doesn't re-run it.
+    F24 repeat=false { power-on-monitors; }
 
     // Window & Column Management
     Mod+C { close-window; }
