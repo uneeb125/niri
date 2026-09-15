@@ -4,7 +4,7 @@ output "eDP-1" {
     scale 1.0
     // transform "90"
     // position x=1280 y=0
-    variable-refresh-rate // on-demand=true
+    // variable-refresh-rate // on-demand=true
     focus-at-startup
     backdrop-color "#000000"
 }
